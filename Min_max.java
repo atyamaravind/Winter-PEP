@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Min_max {
 public static void main(String[] args) {
-int[] num = {5, 2, 8, 3, 1, 4};
+int[] num = {25,65,89,47,9};
 Arrays.sort(num);
 System.out.println("Sorted array: " + Arrays.toString(num));
 int n = num.length-1;
@@ -12,10 +12,10 @@ int Mul = num[0]*num[n];
 System.out.println("Product is: "+Mul);
 int Q = num[0];
 int W = num[n];
-if(Mul%Q==0 && Mul%W==0){
+if(W%Q==0){
 System.out.println("True");
-}/*else{
+}else{
 System.out.println("False");
-}*/
+}
 }
 }
